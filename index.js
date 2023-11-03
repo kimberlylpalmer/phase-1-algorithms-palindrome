@@ -1,9 +1,24 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let characters = word.split('')
+  let revChar = characters.slice().reverse()
+  let originalWord = characters.join('');
+  let revWord = revChar.join('');
+  return originalWord ===revWord;
 }
+isPalindrome('racecar')
+
 
 /* 
   Add your pseudocode here
+
+  a function that takes a word and spells it backwards to see if it matches forward
+  1. input the string
+  2. turn the string into an array
+  3. reverse the reverse the array
+  4. compare the two arrays
+  5. return the result
+
 */
 
 /*
